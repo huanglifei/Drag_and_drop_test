@@ -16,7 +16,7 @@ $(function() {
 
         if (datatype == 'text') {
           
-            parentobj.load('../template/type-text/text.html')
+            parentobj.load('../template/type-text/text.html',)
             // inntedtor();
 
             editorInit();
