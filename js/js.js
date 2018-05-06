@@ -78,7 +78,11 @@ $(function() {
 
     }
 
-
+/********
+ * 关于拖动对象的参考
+ * https://blog.csdn.net/baidu_25343343/article/details/53215193
+ * 
+ * ******/
 
 
 });
