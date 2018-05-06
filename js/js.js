@@ -17,23 +17,17 @@ $(function() {
         if (datatype == 'text') {
           	
           	//临时容器
-          	var tembox = '<div class="J-tem-editor"></div>';
-          	parentobj.append(tembox);
-            $('.J-tem-editor').load('../Drag_and_drop_test/template/type-text/text.html');
-            
-          
-            
-            	
-//          parentobj.append(_html);
-//          parentobj.remove('.J-tem-editor');
-            
-            // inntedtor();
+         
+          	$.get('../Drag_and_drop_test/template/type-text/text.html',function(result){
+          	
+          		parentobj.append(result);
+          		if($(".J-edtor-item").length > 0){
+					editorInit();
+				}
+          		
+          	})
+
 			
-			console.log('长度是'+$(".J-edtor-item").length);
-			if($(".J-edtor-item").length > 0){
-				 editorInit();
-				
-			}
            
 
 
@@ -65,21 +59,21 @@ $(function() {
 
             obj.attr("contenteditable", true);
 
-//          var itemeditor = obj.ckeditor({
-//
-//              toolbar: "inline",
-//
-//              on: {
-//                  blur: function(event) {
-//                      var data = event.editor.getData();
-//                  },
-//                  instanceReady: function(event) {
-//                      //    event.editor.setData("");       
-//                  },
-//                  dataReady: function(event) {}
-//              }
-//
-//          })
+            var itemeditor = obj.ckeditor({
+
+                toolbar: "inline",
+
+                on: {
+                    blur: function(event) {
+                        var data = event.editor.getData();
+                    },
+                    instanceReady: function(event) {
+                        //    event.editor.setData("");       
+                    },
+                    dataReady: function(event) {}
+                }
+
+            })
         });
 
     }
