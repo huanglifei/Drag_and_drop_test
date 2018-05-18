@@ -1,82 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>拖拽对象</title>
-	
-	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>拖拽对象</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
-	<div class="wrap-box">
-		<div class="side-left">
-			<div class="logo-head">
-				<img src="images/logo.png">
-			</div>
-			<div class="navlist">
-				<ul class="list-none">
-					<li><a href="#"><i class="fa fa-user-circle-o fa-lg"></i> 参展管理</a></li>
-					<li><a href="#"><i class="fa fa-pencil-square-o fa-lg"></i> 内容管理</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="side-right">
-			<div class="head-info">
-				<div class="head-indese">
-					<!-- <div class="tit-box"><i class="fa fa-align-left fa-lg"></i> <span class="tit-txt">ESC China 2018</span></div> -->
-					<div class="tab-box">
-						
-						
-						<span class="tab-item">
+    <div class="container padding0">
+        <div class="row wrap-box padding0">
+            <div class="col-md-2 col-sm-4 padding0 side-left">
+                <div class="logo-head">
+                    <img src="images/logo.png">
+                </div>
+                <div class="navlist">
+                    <ul class="list-none">
+                        <li><a href="#"><i class="fa fa-user-circle-o fa-lg"></i> 参展管理</a></li>
+                        <li><a href="#"><i class="fa fa-pencil-square-o fa-lg"></i> 内容管理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-8 padding0 side-right">
+                <div class="head-info">
+                    <div class="head-indese">
+                        <!-- <div class="tit-box"><i class="fa fa-align-left fa-lg"></i> <span class="tit-txt">ESC China 2018</span></div> -->
+                        <div class="tab-box">
+                            <span class="tab-item">
 							<span class="tip-box">3</span>
-							<i class="fa fa-bell fa-lg" alt="消息"></i>
-						</span>
-						<span class="tab-item">
+                            <i class="fa fa-bell fa-lg" alt="消息"></i>
+                            </span>
+                            <span class="tab-item">
 							<i class="fa fa-envelope fa-lg" alt="邮件"></i>
 						</span>
-						<span class="tab-item">
+                            <span class="tab-item">
 							<i class="fa fa-briefcase fa-lg" alt="待办"></i>
 						</span>
-					</div>
-				</div>
-			</div>
-			<div class="editor-box">
-				<div class="tool-box J-editor-tool disnone">
-					<ul class="list-none">
-						<li data-type="text">纯文本</li>
-						<li data-type="images">图片</li>
-						<li data-type="vidio">视频</li>
-						<li data-type="btton">按钮</li>
-						<li data-type="line">分割线</li>
-						<li data-type="map">地图</li>
-						
-
-					</ul>
-				</div>
-				<div class="content-box">
-					<div class="content-left">
-						
-					</div>
-					<div class="content-right">
-						<div class="content-wrap J-editor-content">
-							<div class="default-box J-editor-start">
-								<i class="fa fa-pencil-square-o fa-lg"></i>创建新网页
-							</div>
-							
-							<div class="J-editorbox"></div>
-
-							<!-- <div id="editor-txt1 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-box">
+                    <div class="tool-box J-editor-tool disnone">
+                        <ul class="list-none">
+                            <li data-type="text">纯文本</li>
+                            <li data-type="images">图片</li>
+                            <li data-type="vidio">视频</li>
+                            <li data-type="btton">按钮</li>
+                            <li data-type="line">分割线</li>
+                            <li data-type="map">地图</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <div class="content-left">
+                        </div>
+                        <div class="content-right">
+                            <div class="content-wrap J-editor-content">
+                                <div class="default-box J-editor-start">
+                                    <i class="fa fa-pencil-square-o fa-lg"></i>创建新网页
+                                </div>
+                                <div class="J-editorbox"></div>
+                                <!-- <div id="editor-txt1 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div>
 							<div id="editor-txt2 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div>
 							<div id="editor-txt3 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="ckeditor_4.8.0_standard/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/adapters/jquery.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wrap-box" style="display: none;">
+        <div class="side-left">
+            <div class="logo-head">
+                <img src="images/logo.png">
+            </div>
+            <div class="navlist">
+                <ul class="list-none">
+                    <li><a href="#"><i class="fa fa-user-circle-o fa-lg"></i> 参展管理</a></li>
+                    <li><a href="#"><i class="fa fa-pencil-square-o fa-lg"></i> 内容管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side-right">
+            <div class="head-info">
+                <div class="head-indese">
+                    <!-- <div class="tit-box"><i class="fa fa-align-left fa-lg"></i> <span class="tit-txt">ESC China 2018</span></div> -->
+                    <div class="tab-box">
+                        <span class="tab-item">
+							<span class="tip-box">3</span>
+                        <i class="fa fa-bell fa-lg" alt="消息"></i>
+                        </span>
+                        <span class="tab-item">
+							<i class="fa fa-envelope fa-lg" alt="邮件"></i>
+						</span>
+                        <span class="tab-item">
+							<i class="fa fa-briefcase fa-lg" alt="待办"></i>
+						</span>
+                    </div>
+                </div>
+            </div>
+            <div class="editor-box">
+                <div class="tool-box J-editor-tool disnone">
+                    <ul class="list-none">
+                        <li data-type="text">纯文本</li>
+                        <li data-type="images">图片</li>
+                        <li data-type="vidio">视频</li>
+                        <li data-type="btton">按钮</li>
+                        <li data-type="line">分割线</li>
+                        <li data-type="map">地图</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <div class="content-left">
+                    </div>
+                    <div class="content-right">
+                        <div class="content-wrap J-editor-content">
+                            <div class="default-box J-editor-start">
+                                <i class="fa fa-pencil-square-o fa-lg"></i>创建新网页
+                            </div>
+                            <div class="J-editorbox"></div>
+                            <!-- <div id="editor-txt1 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div>
+							<div id="editor-txt2 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div>
+							<div id="editor-txt3 " contenteditable="true" class="wrap-txt J-edtor-item">请输入文本</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="ckeditor_4.8.0_standard/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/adapters/jquery.js"></script>
 </body>
+
 </html>

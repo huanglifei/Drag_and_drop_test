@@ -53,7 +53,7 @@ $(function() {
 
         $(".J-edtor-item").each(function() {
 
-			console.log('初始化编辑器wwwwwwwwww');
+		
 			
             var obj = $(this);
 

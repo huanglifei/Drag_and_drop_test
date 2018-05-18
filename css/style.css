@@ -23,14 +23,21 @@ body {
 .disnone {
   display: none;
 }
+.container {
+  max-width: 100%;
+}
+.padding0 {
+  padding: 0;
+  margin: 0;
+}
 .wrap-box {
   width: 100%;
   height: 100%;
-  display: table;
+  display: flex;
 }
 .wrap-box .side-left {
-  width: 260px;
-  float: left;
+  width: 100%;
+  padding: 0;
   background: #232e3c;
   min-height: 100%;
 }
@@ -56,8 +63,7 @@ body {
   text-decoration: none;
 }
 .wrap-box .side-right {
-  width: calc(100% - 260px);
-  float: left;
+  width: 100%;
   background-color: #fff;
 }
 .wrap-box .side-right .head-info {
